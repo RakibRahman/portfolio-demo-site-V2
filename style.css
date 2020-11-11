@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+}
+p{
+    line-height: 1.5;
+}
+.hireme {
+    text-decoration: none;
+    background-image: linear-gradient(to bottom right, azure, blueviolet);
+    font-weight: 900;
+    border-radius: 3em;
+    color: white;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+
+#hireme:hover {
+    color: #AAED35;
+    font: bold;
+    font-size: large;
+}
+
+.visit-gh {
+    text-decoration: none;
+    background-image: linear-gradient(to right, cyan, blueviolet);
+    font-weight: 900;
+    border-radius: 3em;
+    color: azure;
+    padding: 10px 20px;
+}
+
+#visit-gh:hover {
+    color: greenyellow;
+    font: bold;
+    font-size: large;
+}
+
+section {
+    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.first-sectionbg {
+    background-image: url("bg/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.second-sectionbg {
+    background-image: url("bg/biography-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.work-areabg {
+    background-image: url("bg/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.secdiv {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 3%;
+}
+
+.secdiv img {
+    width: 90%;
+}
+
+.secdiv2 {
+    margin-top: 10%;
+}
+.secdiv2 a{
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.workdemo {
+    display: grid;
+    /*to make it grid container*/
+    grid-gap: 1%;
+    /* gap between row and column*/
+    margin-top: 3%;
+    /*width: 100%; defines grid width/size*/
+    grid-template-columns: repeat(3, 1fr);
+    /*defines number of columns in a grid*/
+
+
+}
+
+.workdemo img {
+   width: 90%;
+    border: 2px groove purple;
+    height: 300px;
+}
+.workdemo .work1{
+    margin-left: 50px;
+}
+.workdemo .work2{
+    margin-left: 30px;
+}
+.wimg1:hover {
+    transform: scale(1.1);
+    /*transform:scale() method increases or decreases the size of an element*/
+    transform-origin: center;
+    /*position of transformed element*/
+    box-shadow: 2px 2px 40px rgba(122, 224, 6, 0.836);
+}
+
+#text-hvr {
+    margin-top: 0;
+    text-align: center;
+    color: turquoise;
+    font-weight: 500;
+}
+
+#text-hvr:hover {
+    color: red;
+
+
+}
+
+.footerarea {
+    background-image: url(bg/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.opinion {
+    margin: 2% 20% 2% 20%;
+    /* 1st value is top,2nd is right,3rd is bottom,last one is left */
+    font-weight: 500;
+    font-size: large;
+
+}
+
+#para {
+    line-height: 1.5;
+    color: forestgreen;
+}
+
+#contact {
+    padding: 3%;
+    font-size: larger;
+    color: whitesmoke;
+    background-color: orangered;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+#footer {
+    /* position: fixed;
+    left: 0;
+    bottom: 0;                To Make footer fixed with scroll
+    width: 100%; */
+    text-align: center;
+    color: darkorchid;
+
+}
+/*=====================
+Media Quaries
+======================*/
+@media only screen and (max-width:768px){
+    section{
+        padding-top: 100px;
+    }
+  .intro{
+    margin-top: 10%;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10%;
+  }
+  .intro p {
+    margin: 10% 0%;
+    font-size: 14px;
+  }
+.visit-gh{
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: hotpink;
+    padding: 1px 2px 1px 2px;
+    border-radius: 5px;
+    font-weight: normal;
+    font-family: Squada One;
+    font-size: 20px;
+    display:block;
+}
+#contact{
+  
+  margin-right: 10em;
+}
+.opinion h4 {
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.opinion h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: gray;
+    padding-bottom: 2%;
+    font-size: 11px;
+}
+.opinion p {
+    font-size: 10px;
+    text-align: justify;
+}
+}
