@@ -122,6 +122,7 @@ section {
 #text-hvr {
     margin-top: 0;
     text-align: center;
+    margin-right: 600px;
     color: turquoise;
     font-weight: 500;
 }
